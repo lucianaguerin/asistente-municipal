@@ -17,7 +17,17 @@
 
     <div class="container mt-4">
         <h2 class="mb-4 text-center">Trámites y Permisos Encontrados</h2>
-        
+        {% if valor_utm %}
+    {% if conexion_online %}
+        <div class="alert alert-success">
+            Conectado a Mindicador.cl | Valor UTM actual: <strong>${{ valor_utm }}</strong>
+        </div>
+    {% else %}
+        <div class="alert alert-warning">
+            ⚠️ Sin conexión a internet (Último valor obtenido: <strong>${{ valor_utm }}</strong>)
+        </div>
+    {% endif %}
+{% endif %}
         <div class="row">
             <!-- Este ciclo muestra cada permiso encontrado -->
             {% for permiso in permisos %}
@@ -27,11 +37,37 @@
                             <h5 class="card-title text-primary">{{ permiso.nombre }}</h5>
                             <h6 class="card-subtitle mb-3 text-muted">📍 {{ permiso.comuna }} | 🏷️ {{ permiso.rubro }}</h6>
                             <p class="card-text mb-1"><strong>Costo aproximado:</strong> {{ permiso.costo }}</p>
+                            {% if valor_utm %}
+    <p class="text-success" style="font-size: 0.9em;">
+        <em>* Valor de referencia (1 UTM): <strong>${{ valor_utm }}</strong></em>
+    </p>
+{% endif %}
                             <p class="card-text mb-1"><strong>Vigencia:</strong> {{ permiso.vigencia }}</p>
                             <p class="card-text mb-3"><strong>Institución:</strong> {{ permiso.institucion }}</p>
-                            
+                        <div class="mt-3">
+                            <details class="mb-3">
+                                    <summary class="btn btn-outline-secondary btn-sm w-100 text-start">
+                                        📋 Ver requisitos del trámite ({{ permiso.requisitos|length }} items)
+                                    </summary>
+                                <ul class="list-group list-group-flush mt-2">
+                                {% for req in permiso.requisitos %}
+                                <li class="list-group-item small">• {{ req }}</li>
+                                {% endfor %}
+                            </ul>
+                        </details>
+                    </div>
                             <!-- Botón para ir al sitio oficial -->
-                            <a href="{{ permiso.enlace }}" target="_blank" class="btn btn-outline-primary btn-sm w-100">Ver información oficial del trámite ↗</a>
+                            <div class="mt-3">
+                                {% if permiso.enlace_oficial %}
+                                    <a href="{{ permiso.enlace_oficial }}" target="_blank" class="btn btn-primary btn-sm">
+                                        📄 Ver información oficial / PDF
+                                    </a>
+                                {% else %}
+                                    <a href="https://www.chileatiende.gob.cl" target="_blank" class="btn btn-secondary btn-sm">
+                                        Consultar en ChileAtiende
+                                    </a>
+                                {% endif %}
+                            </div>
                         </div>
                     </div>
                 </div>

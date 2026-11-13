@@ -23,29 +23,40 @@
                     <h2 class="text-center mb-3">Trámites y Patentes</h2>
                     <p class="text-muted text-center mb-4">Selecciona tu comuna y rubro para ver los permisos que necesitas.</p>
 
-                    <form action="{% url 'resultado_permisos' %}" method="GET">
-                        
+                    <<form method="GET" action="{% url 'resultado_permisos' %}">
+    
+                        <!-- 1. Comuna -->
                         <div class="mb-3">
-                            <label for="comuna" class="form-label fw-bold">Comuna:</label>
-                            <select name="comuna" id="comuna" class="form-select">
-                                <option value="">Todas las comunas</option>
+                            <label for="comuna" class="form-label"><b>1. ¿En qué comuna vas a emprender?</b></label>
+                            <select name="comuna" id="comuna" class="form-control" required>
+                                <option value="" disabled selected>Selecciona tu comuna...</option>
                                 <option value="Valparaíso">Valparaíso</option>
                                 <option value="Viña del Mar">Viña del Mar</option>
                             </select>
                         </div>
-
-                        <div class="mb-4">
-                            <label for="rubro" class="form-label fw-bold">Rubro:</label>
-                            <select name="rubro" id="rubro" class="form-select">
-                                <option value="">Todos los rubros</option>
+                    
+                        <!-- 2. Actividad -->
+                        <div class="mb-3">
+                            <label for="actividad" class="form-label"><b>2. ¿Qué tipo de actividad principal realizarás?</b></label>
+                            <select name="actividad" id="actividad" class="form-control" required>
+                                <option value="" disabled selected>Selecciona tu rubro...</option>
                                 <option value="Gastronomía y Alimentos">Gastronomía y Alimentos</option>
-                                <option value="Comercio Minorista">Comercio Minorista</option>
-                                <option value="Comercio en Vía Pública">Comercio en Vía Pública</option>
                                 <option value="Servicios Profesionales">Servicios Profesionales</option>
+                                <option value="Comercio">Comercio Minorista / Vía Pública</option>
                             </select>
                         </div>
-
-                        <button type="submit" class="btn btn-primary w-100">Buscar permisos</button>
+                    
+                        <!-- 3. Espacio -->
+                        <div class="mb-3">
+                            <label for="espacio" class="form-label"><b>3. ¿Dónde vas a operar?</b></label>
+                            <select name="espacio" id="espacio" class="form-control" required>
+                                <option value="" disabled selected>Selecciona el espacio...</option>
+                                <option value="local">En un local o propiedad comercial</option>
+                                <option value="calle">En la vía pública o ambulante</option>
+                            </select>
+                        </div>
+                    
+                        <button type="submit" class="btn btn-primary w-100 mt-3">Diagnosticar mis permisos</button>
                     </form>
                 </div>
             </div>

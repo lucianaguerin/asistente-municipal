@@ -1,0 +1,824 @@
+[
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 1,
+      "fields": {
+        "comuna": "Valparaíso",
+        "rubro": "Comercio Minorista (local)",
+        "nombre": "Patente Comercial – Personas Jurídicas",
+        "institucion": "I. Municipalidad de Valparaíso (Departamento de Rentas / Plataforma de Atención Municipal, Av. Argentina 864)",
+        "costo": "Proporcional al capital propio tributario (DL 3.063: entre 2,5 y 5 por mil, según ordenanza local). Mínimo legal 1 UTM y máximo 8.000 UTM anuales.",
+        "vigencia": "Permanente, con pago semestral. Patente provisoria: 6 meses.",
+        "requisitos": [
+          "Solicitud (carpeta de patente comercial descargable en el sitio municipal)",
+          "Fotocopia de cédula de identidad",
+          "Certificado de avalúo fiscal detallado con el nombre del propietario",
+          "Inicio de actividades ante el SII y sus modificaciones",
+          "Contrato de arriendo notarial o título notarial a nombre del titular, o escritura si es propietario (en subarriendo: contrato de arriendo, subarriendo notarial y autorización notarial del dueño)",
+          "Resolución sanitaria (original o copia legalizada) cuando corresponda al giro",
+          "Fotocopia de la escritura de la sociedad y sus modificaciones, con inscripción en el Conservador de Bienes Raíces y Comercio",
+          "Certificado de vigencia de la sociedad",
+          "Requisitos DOM según formulario (fotografía a color de fachada, certificado SEC TE1, entre otros)"
+        ],
+        "enlace_oficial": "https://municipalidaddevalparaiso.cl/patentes-y-permisos/"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 2,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Comercio Minorista (local)",
+        "nombre": "Solicitud de Patente Comercial",
+        "institucion": "I. Municipalidad de Viña del Mar (Dirección de Ingresos – Departamento de Patentes y Publicidad, Arlegui 777)",
+        "costo": "Proporcional al capital propio declarado (DL 3.063: entre 2,5 y 5 por mil, según ordenanza local). Mínimo legal 1 UTM. Se suman cobros por aseo y propaganda.",
+        "vigencia": "Permanente, con pago semestral de la patente.",
+        "requisitos": [
+          "Formulario de solicitud (sitio web municipal o Módulo de Informaciones)",
+          "Fotocopia de cédula de identidad (persona natural)",
+          "Fotocopia del RUT de la sociedad y cédula del representante legal (persona jurídica)",
+          "Contrato de arriendo o escritura legalizados ante notario, o certificado de dominio vigente",
+          "Escritura de sociedad y extracto legalizados + certificado de vigencia (antigüedad máxima 30 días)",
+          "Resolución sanitaria favorable y/o informe sanitario, para giros de alimentos, talleres, bodegas u otros que lo requieran",
+          "Calificación de actividad inofensiva y/o molesta (talleres, bodegas u otros, según corresponda)",
+          "Fotocopia de iniciación de actividades ante el SII y avisos de modificaciones",
+          "Certificado de avalúo fiscal (rol de la propiedad con datos del propietario)",
+          "2 fotografías del establecimiento (interior y exterior)",
+          "Certificado Técnico Urbanístico e Informe de Factibilidad de Uso de Suelo (DOM, Quillota 152)",
+          "Recepción definitiva de la edificación",
+          "Declaración jurada del capital propio y declaración de propaganda (en el formulario)"
+        ],
+        "enlace_oficial": "https://www.munivina.cl/wp-content/uploads/2025/09/1-solicitud-de-patente-comercial_2025.pdf"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 3,
+      "fields": {
+        "comuna": "Valparaíso",
+        "rubro": "Gastronomía y Alimentos",
+        "nombre": "Autorización sanitaria de alimentos",
+        "institucion": "Autoridad Sanitaria – SEREMI de Salud Región de Valparaíso",
+        "costo": "Arancel base según tipo de instalación, desde $12.100 hasta $899.700 CLP, más 0,5% del capital inicial declarado ante el SII.",
+        "vigencia": "3 años, renovable.",
+        "requisitos": [
+          "Autorización municipal, según el plano regulador",
+          "Plano o croquis de planta e instalaciones sanitarias a escala",
+          "Descripción general de los procesos de elaboración",
+          "Listado de materias primas que se emplearán",
+          "Listado de tipos de alimentos que se elaborarán",
+          "Comprobante de pago de alcantarillado público o resolución de la obra de alcantarillado particular",
+          "Comprobante de pago de agua potable de la red pública o resolución de la obra de agua potable particular",
+          "Croquis o memoria técnica de los sistemas de eliminación de calor, olor o vapor y de frío, según corresponda",
+          "Sistema de control de calidad sanitaria (manual de buenas prácticas)",
+          "Sistema de eliminación de desechos (basuras)",
+          "Si es centro comercial: contrato de arriendo o autorización de propiedad legalizada, y carta de uso exclusivo de servicios higiénicos (a no más de 75 m) legalizada",
+          "Si es instalación en vía pública (carro, módulo, caseta, kiosco, puesto de feria): certificado de emplazamiento municipal, cuando corresponda"
+        ],
+        "enlace_oficial": "https://www.chileatiende.gob.cl/fichas/172-autorizacion-sanitaria-de-alimentos"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 4,
+      "fields": {
+        "comuna": "Valparaíso",
+        "rubro": "Gastronomía y Alimentos",
+        "nombre": "Patente de Alcohol – Persona Jurídica",
+        "institucion": "I. Municipalidad de Valparaíso (Plataforma de Atención Municipal, Av. Argentina 864; aprobación del Concejo Municipal)",
+        "costo": "Según Ley N° 19.925 y ordenanza local, dependiendo del giro. Se paga además la patente comercial. Inicio de actividades SAG: 0,14 UTM + IVA.",
+        "vigencia": "Semestral (renovación cada semestre). Solo se otorga de forma definitiva, no provisoria.",
+        "requisitos": [
+          "Local dentro de la comuna y titulares mayores de 18 años sin las inhabilidades de la Ley 19.925 (p. ej. condena por crímenes o simples delitos, funcionarios fiscales o municipales, negocios clausurados definitivamente)",
+          "Fotocopia de cédula de identidad",
+          "Certificado de avalúo fiscal detallado con el nombre del propietario",
+          "Inicio de actividades ante el SII y sus modificaciones",
+          "Contrato de arriendo notarial o título notarial a nombre del titular, o escritura de la propiedad",
+          "Resolución sanitaria (original o copia legalizada) en los casos que proceda",
+          "Escritura de la sociedad y modificaciones con inscripción en el Conservador de Bienes Raíces y Comercio, si procede",
+          "Certificado de vigencia de la sociedad",
+          "Requisitos DOM según formulario (fotografía de fachada, certificado SEC TE1, entre otros)",
+          "Comunicación de inicio de actividades ante el SAG (ChileAtiende ficha 2560), exigida para obtener la patente de alcoholes en restaurantes y botillerías"
+        ],
+        "enlace_oficial": "https://municipalidaddevalparaiso.cl/patentes-y-permisos/"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 5,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Gastronomía y Alimentos",
+        "nombre": "Solicitud de Patente de Alcohol",
+        "institucion": "I. Municipalidad de Viña del Mar (Dirección de Ingresos – Departamento de Patentes y Publicidad)",
+        "costo": "Según Ley N° 19.925 y ordenanza local, dependiendo del giro. Las patentes limitadas se adjudican en remate municipal. Inicio de actividades SAG: 0,14 UTM + IVA.",
+        "vigencia": "Semestral: todas las patentes de alcohol deben renovarse cada semestre.",
+        "requisitos": [
+          "Formulario de solicitud",
+          "Fotocopia de cédula de identidad (persona natural) o RUT de la sociedad y cédula del representante legal (persona jurídica)",
+          "Contrato de arriendo o escritura de la propiedad, legalizados ante notario",
+          "Escritura de sociedad y extracto legalizados + certificado de vigencia (máximo 30 días) y acta de directorio si es sociedad anónima",
+          "Opinión de la Junta de Vecinos del sector",
+          "Certificado de antecedentes del Registro Civil (del titular o de todos los socios)",
+          "Declaración jurada notarial del Art. 4° de la Ley N° 19.925 (del titular o de todos los socios)",
+          "Resolución sanitaria favorable para giros de alimentos, talleres, bodegas u otros que la requieran",
+          "Calificación de actividad inofensiva y/o molesta, según corresponda",
+          "Fotocopia de iniciación de actividades ante el SII y modificaciones",
+          "Certificado de avalúo fiscal",
+          "2 fotografías del establecimiento (interior y exterior)",
+          "Certificado Técnico Urbanístico, Informe de Factibilidad de Uso de Suelo (DOM) y recepción definitiva",
+          "Declaración jurada del capital propio y declaración de propaganda (en el formulario)",
+          "Comunicación de inicio de actividades ante el SAG (ChileAtiende ficha 2560), exigida para obtener la patente de alcoholes en restaurantes y botillerías"
+        ],
+        "enlace_oficial": "https://www.munivina.cl/wp-content/uploads/2025/09/4-solicitud-de-patente-alcohol_2025.pdf"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 6,
+      "fields": {
+        "comuna": "Valparaíso",
+        "rubro": "Comercio en Vía Pública",
+        "nombre": "Permiso para Kioscos (ocupación de Bien Nacional de Uso Público)",
+        "institucion": "I. Municipalidad de Valparaíso (Departamento de Desarrollo Económico, Comité de Permisos y Concesiones, Departamento de Rentas)",
+        "costo": "No publicado en la página oficial. Se paga el derecho municipal de ocupación del BNUP más la patente comercial (capital propio), según ordenanza local.",
+        "vigencia": "Permiso precario, con plazo fijado en el decreto municipal.",
+        "requisitos": [
+          "Solicitud de instalación de kiosco en la vía pública, completada en la Plataforma de Atención Ciudadana (Av. Argentina 864)",
+          "Fotocopia de cédula de identidad",
+          "Certificado de antecedentes vigente",
+          "Certificado de residencia de la Junta de Vecinos o UNCO (si no existe Junta de Vecinos)",
+          "Informe social del solicitante e informes técnicos de DOM y Dirección de Tránsito (los elabora el municipio)",
+          "Para emitir la patente comercial: certificado de iniciación de actividades y resolución sanitaria, si procede",
+          "Restricciones: solo en cerro y pie de cerro; no se autorizan nuevos kioscos en el plan de la ciudad (entre mar y pie de cerro)"
+        ],
+        "enlace_oficial": "https://municipalidaddevalparaiso.cl/patentes-y-permisos/"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 7,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Comercio en Vía Pública",
+        "nombre": "Solicitud de Permiso en Vía Pública (kiosco, ambulante en cerros, feria libre, estacionado, estival/festividad)",
+        "institucion": "I. Municipalidad de Viña del Mar (Dirección de Ingresos – Departamento de Permisos, Arlegui 777)",
+        "costo": "No indicado en el formulario. Los derechos del permiso precario se pagan en línea (Permisos Precarios) según ordenanza municipal.",
+        "vigencia": "Permiso precario. Los permisos estival y de festividad son de temporada.",
+        "requisitos": [
+          "Ser residente de la comuna de Viña del Mar",
+          "Formulario de solicitud con tipo de permiso, giro y ubicación solicitada",
+          "Fotocopia de cédula de identidad por ambos lados",
+          "2 fotos tamaño carnet con nombres, apellidos y RUT",
+          "Registro Social de Hogares aplicado en la comuna (vigencia 30 días)",
+          "Certificado de residencia de la Junta de Vecinos o declaración jurada notarial (vigencia 90 días)",
+          "Fotocopia de iniciación de actividades ante el SII",
+          "Resolución sanitaria del Servicio de Salud (según giro)",
+          "Croquis de ubicación para kiosco o estacionado (original y 4 copias)",
+          "Si es estacionado: fotografía y dimensiones del carro o elemento a utilizar",
+          "Si es ambulante con vehículo: permiso de circulación e inscripción a nombre del postulante, o carta notarial del dueño",
+          "Si el giro es frutas y verduras: declaración jurada notarial de procedencia de mercaderías"
+        ],
+        "enlace_oficial": "https://www.munivina.cl/wp-content/uploads/2025/09/Permiso-en-Via-Publica-Procesamiento-25.09.25.pdf"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 8,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Comercio en Vía Pública",
+        "nombre": "Autorización sanitaria para vendedores ambulantes de alimentos",
+        "institucion": "Autoridad Sanitaria – SEREMI de Salud Región de Valparaíso",
+        "costo": "Arancel base de $15.600 CLP, reajustable por IPC cada enero.",
+        "vigencia": "No indicada en la ficha oficial; confirmar en la resolución de la SEREMI.",
+        "requisitos": [
+          "Trámite en línea en SEREMI en Línea con ClaveÚnica, o en las oficinas regionales",
+          "No requiere dirección de emplazamiento otorgada por la municipalidad",
+          "Autorización válida para una comuna específica",
+          "Solo alimentos de bajo riesgo: frutas y hortalizas frescas, frutos secos, algodón de azúcar envasado, alimentos envasados que no requieren refrigeración, bebidas analcohólicas envasadas, helados envasados de fábricas autorizadas, infusiones en termos sellados, masas dulces y palomitas envasadas, frutas confitadas",
+          "No reemplaza el permiso municipal de vía pública (ver permiso de Viña del Mar)"
+        ],
+        "enlace_oficial": "https://www.chileatiende.gob.cl/fichas/16578-autorizacion-sanitaria-para-vendedores-ambulantes-de-alimentos"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 9,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Servicios Profesionales",
+        "nombre": "Solicitud de Patente Profesional",
+        "institucion": "I. Municipalidad de Viña del Mar (Dirección de Ingresos – Departamento de Patentes y Publicidad)",
+        "costo": "Según régimen tributario en el SII (2ª categoría, 14 ter, 14 bis o contabilidad simplificada) y ordenanza local. Mínimo legal 1 UTM (DL 3.063).",
+        "vigencia": "Permanente, con pago semestral de la patente.",
+        "requisitos": [
+          "Formulario de solicitud",
+          "Fotocopia de cédula de identidad",
+          "Acreditar domicilio de la oficina o Domicilio Postal Tributario (arriendo, cesión de uso o escritura legalizados ante notario)",
+          "Resolución sanitaria favorable, para profesiones con dirección donde se realicen procedimientos",
+          "Fotocopia legalizada del título profesional",
+          "Fotocopia de iniciación de actividades ante el SII y avisos de modificaciones",
+          "Certificado de avalúo fiscal",
+          "2 fotografías del establecimiento (si es oficina)",
+          "Certificado Técnico Urbanístico e Informe de Factibilidad de Uso de Suelo (DOM; solo oficinas)",
+          "Declaración de domicilio postal tributario (solo si no hay oficina)",
+          "Declaración de propaganda (en el formulario)"
+        ],
+        "enlace_oficial": "https://www.munivina.cl/wp-content/uploads/2025/09/3-solicitud-de-patente-profesional_2025.pdf"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 10,
+      "fields": {
+        "comuna": "Valparaíso",
+        "rubro": "Servicios Profesionales",
+        "nombre": "Patente Comercial – Microempresa Familiar (MEF)",
+        "institucion": "I. Municipalidad de Valparaíso (Plataforma de Atención Municipal, Av. Argentina 864)",
+        "costo": "No publicado en la página oficial; se informa al ser atendido en la Plataforma.",
+        "vigencia": "Permanente, con pago semestral de patente (confirmar en la Plataforma).",
+        "requisitos": [
+          "Dirigido a personas naturales o EIRL que ejerzan una actividad lícita e inofensiva en su casa habitación (puede incluir labores profesionales u oficios)",
+          "La actividad se ejerce en la casa habitación familiar y el solicitante vive en esa dirección",
+          "No más de 5 trabajadores ajenos a la familia",
+          "Activos productivos, sin considerar el inmueble, que no excedan 1.000 UF",
+          "Actividad no peligrosa, contaminante ni molesta",
+          "Ficha de registro de Microempresa Familiar (se completa en la Plataforma Municipal)",
+          "Otros documentos según la propiedad, la forma social y el giro: contrato de arrendamiento o inscripción de la propiedad del Conservador de Bienes Raíces, autorización sanitaria si el giro lo requiere"
+        ],
+        "enlace_oficial": "https://municipalidaddevalparaiso.cl/patentes-y-permisos/"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 11,
+      "fields": {
+        "comuna": "Valparaíso",
+        "rubro": "Comercio Minorista (local)",
+        "nombre": "Patente Comercial – Persona Natural",
+        "institucion": "I. Municipalidad de Valparaíso (Plataforma de Atención Municipal, Av. Argentina 864)",
+        "costo": "Proporcional al capital propio (DL 3.063: 2,5 a 5 por mil según ordenanza). Mínimo 1 UTM.",
+        "vigencia": "Permanente, con pago semestral.",
+        "requisitos": [
+          "Solicitud con todos los datos (carpeta descargable en el sitio municipal)",
+          "Hoja DOM con rol de la propiedad, croquis, plano y dos fotografías (fachada e interior)",
+          "Fotocopia de cédula de identidad del titular",
+          "Título que autorice ocupar el inmueble para el fin pretendido, o escritura si es propietario (subarriendo: contrato, subarriendo y autorización notarial del dueño)",
+          "Requisitos DOM según formulario (fotografía de fachada, avalúo fiscal detallado, certificado SEC TE1, entre otros)"
+        ],
+        "enlace_oficial": "https://municipalidaddevalparaiso.cl/patentes-y-permisos/"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 12,
+      "fields": {
+        "comuna": "Valparaíso",
+        "rubro": "Comercio Minorista (local)",
+        "nombre": "Patente Comercial Provisoria",
+        "institucion": "I. Municipalidad de Valparaíso",
+        "costo": "No publicado en la página oficial. Se paga la patente comercial según capital propio.",
+        "vigencia": "6 meses.",
+        "requisitos": [
+          "Local con emplazamiento conforme a la zonificación del Plan Regulador",
+          "Autorización sanitaria, cuando el DFL N° 1 de Salud (1989) la exige expresamente",
+          "Si la actividad requiere autorización sanitaria fuera de ese listado: acreditar que se solicitó a la Autoridad Sanitaria",
+          "Permisos que exijan otras leyes especiales, según el caso",
+          "No aplica a patentes de alcoholes (solo se otorgan de forma definitiva)"
+        ],
+        "enlace_oficial": "https://municipalidaddevalparaiso.cl/patentes-y-permisos/"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 13,
+      "fields": {
+        "comuna": "Valparaíso",
+        "rubro": "Comercio Minorista (local)",
+        "nombre": "Cambio de ubicación de patente municipal",
+        "institucion": "I. Municipalidad de Valparaíso (Departamento de Rentas)",
+        "costo": "No publicado en la página oficial.",
+        "vigencia": "No publicado en la página oficial.",
+        "requisitos": [
+          "Patente municipal vigente y al día; mismos giros ya autorizados",
+          "Contrato de arrendamiento (y subarriendo si corresponde) o escritura del inmueble; si la escritura tiene más de 3 años, inscripción del Conservador de Bienes Raíces con antigüedad máxima de 6 meses",
+          "Resolución sanitaria de la Seremi para el nuevo local, si la actividad es de alimentos, bodegaje o taller",
+          "Declaración jurada notarial (solo si se opera desde casa habitación): sin publicidad, sin otra actividad productiva y sin ocupar más del 50% de la vivienda"
+        ],
+        "enlace_oficial": "https://municipalidaddevalparaiso.cl/cambio-de-ubicacion-de-patente-municipal/"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 14,
+      "fields": {
+        "comuna": "Valparaíso",
+        "rubro": "Comercio Minorista (local)",
+        "nombre": "Certificado de Vigencia de Patente Comercial",
+        "institucion": "I. Municipalidad de Valparaíso (trámite en línea)",
+        "costo": "No publicado en la página oficial.",
+        "vigencia": "No publicado en la página oficial.",
+        "requisitos": [
+          "Acceso con ClaveÚnica",
+          "Los datos que solicita el formulario en línea no están publicados"
+        ],
+        "enlace_oficial": "https://munivalpo.municipalidad.digital.gob.cl/login/claveunica?redirect=https://munivalpo.municipalidad.digital.gob.cl/tramites/iniciar/90"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 15,
+      "fields": {
+        "comuna": "Valparaíso",
+        "rubro": "Comercio Minorista (local)",
+        "nombre": "Certificado de No Deuda de Patente Comercial",
+        "institucion": "I. Municipalidad de Valparaíso (trámite en línea)",
+        "costo": "No publicado en la página oficial.",
+        "vigencia": "No publicado en la página oficial.",
+        "requisitos": [
+          "Acceso con ClaveÚnica",
+          "Los datos que solicita el formulario en línea no están publicados"
+        ],
+        "enlace_oficial": "https://munivalpo.municipalidad.digital.gob.cl/login/claveunica?redirect=https://munivalpo.municipalidad.digital.gob.cl/tramites/iniciar/134"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 16,
+      "fields": {
+        "comuna": "Valparaíso",
+        "rubro": "Comercio Minorista (local)",
+        "nombre": "Informe sanitario para instalación, ampliación o traslado de establecimientos industriales o comerciales",
+        "institucion": "Autoridad Sanitaria – SEREMI de Salud Región de Valparaíso",
+        "costo": "Arancel base $124.300 CLP + 0,5% del capital inicial declarado al SII (máximo $986.100 CLP).",
+        "vigencia": "Indefinida; debe actualizarse si se amplía, cambia el giro, la dotación o se traslada.",
+        "requisitos": [
+          "Plano o croquis de planta a escala, con cuadro de superficie y usos de los predios vecinos",
+          "Descripción de la construcción (estructura, materiales, carga y descarga, estacionamiento, circulación)",
+          "Descripción de procesos y actividades (materias primas, productos, capacidad de almacenamiento, maquinaria)",
+          "Boleta de servicios sanitarios que acredite alcantarillado, o autorización de agua potable y aguas servidas",
+          "Informe de uso de suelo o certificado de zonificación municipal (antigüedad máxima 6 meses)",
+          "Documentación en formato digital; la SEREMI puede pedir antecedentes adicionales durante la evaluación"
+        ],
+        "enlace_oficial": "https://www.chileatiende.gob.cl/fichas/163-informe-sanitario-para-la-instalacion-ampliacion-o-traslado-de-establecimientos-industriales-o-comerciales"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 17,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Comercio Minorista (local)",
+        "nombre": "Informe sanitario para instalación, ampliación o traslado de establecimientos industriales o comerciales",
+        "institucion": "Autoridad Sanitaria – SEREMI de Salud Región de Valparaíso",
+        "costo": "Arancel base $124.300 CLP + 0,5% del capital inicial declarado al SII (máximo $986.100 CLP).",
+        "vigencia": "Indefinida; debe actualizarse si se amplía, cambia el giro, la dotación o se traslada.",
+        "requisitos": [
+          "Plano o croquis de planta a escala, con cuadro de superficie y usos de los predios vecinos",
+          "Descripción de la construcción (estructura, materiales, carga y descarga, estacionamiento, circulación)",
+          "Descripción de procesos y actividades (materias primas, productos, capacidad de almacenamiento, maquinaria)",
+          "Boleta de servicios sanitarios que acredite alcantarillado, o autorización de agua potable y aguas servidas",
+          "Informe de uso de suelo o certificado de zonificación municipal (antigüedad máxima 6 meses)",
+          "Documentación en formato digital; la SEREMI puede pedir antecedentes adicionales durante la evaluación"
+        ],
+        "enlace_oficial": "https://www.chileatiende.gob.cl/fichas/163-informe-sanitario-para-la-instalacion-ampliacion-o-traslado-de-establecimientos-industriales-o-comerciales"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 18,
+      "fields": {
+        "comuna": "Valparaíso",
+        "rubro": "Servicios Profesionales",
+        "nombre": "Solicitud de Patente Profesional (en línea)",
+        "institucion": "I. Municipalidad de Valparaíso",
+        "costo": "No publicado en la página oficial.",
+        "vigencia": "No publicado en la página oficial.",
+        "requisitos": [
+          "Acceso con ClaveÚnica",
+          "Los requisitos documentales se informan en el trámite en línea; no están publicados en la página"
+        ],
+        "enlace_oficial": "https://munivalpo.municipalidad.digital.gob.cl/login/claveunica?redirect=https://munivalpo.municipalidad.digital.gob.cl/tramites/iniciar/118"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 19,
+      "fields": {
+        "comuna": "Valparaíso",
+        "rubro": "Gastronomía y Alimentos",
+        "nombre": "Solicitud de uso de Bien Nacional de Uso Público para mesas y sillas",
+        "institucion": "I. Municipalidad de Valparaíso",
+        "costo": "No publicado en la página oficial.",
+        "vigencia": "No publicado en la página oficial.",
+        "requisitos": [
+          "Contar con patente comercial del giro cafetería, heladería, bar, fuente de soda, restaurante o similar",
+          "Asegurar un ancho mínimo de 2 metros de libre flujo peatonal",
+          "Considerar la continuidad natural de la calle, sin entorpecerla"
+        ],
+        "enlace_oficial": "https://web.municipalidaddevalparaiso.cl/category/tramites/patentes-permisos/"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 20,
+      "fields": {
+        "comuna": "Valparaíso",
+        "rubro": "Comercio en Vía Pública",
+        "nombre": "Permiso de ocupación de Bien Nacional de Uso Público (ferias, comercio ambulante, eventos)",
+        "institucion": "I. Municipalidad de Valparaíso",
+        "costo": "No publicado en la página oficial.",
+        "vigencia": "Según el decreto del permiso o la duración del evento.",
+        "requisitos": [
+          "Ingresar con ClaveÚnica al portal municipal de trámites digitales",
+          "Leer los requerimientos y adjuntar los documentos solicitados",
+          "Ferias: adjuntar nómina de participantes",
+          "Comercio ambulante: cumplir la normativa municipal vigente",
+          "Enviar la solicitud con al menos 15 días de anticipación"
+        ],
+        "enlace_oficial": "https://municipalidaddevalparaiso.cl/patentes-y-permisos/"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 21,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Comercio Minorista (local)",
+        "nombre": "Solicitud de Ampliación y/o Cambio de Giro de patente comercial",
+        "institucion": "I. Municipalidad de Viña del Mar (Departamento de Patentes y Publicidad)",
+        "costo": "No publicado en la página oficial.",
+        "vigencia": "Trámite único; modifica la patente vigente.",
+        "requisitos": [
+          "Cumplir previamente las normas de zonificación",
+          "Antecedentes indicados en el formulario oficial (el detalle no está publicado en la página del municipio)"
+        ],
+        "enlace_oficial": "https://www.munivina.cl/wp-content/uploads/2025/09/11.-Solicitud-de-ampliacion-y-cambio-de-giro_2025.pdf"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 22,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Comercio Minorista (local)",
+        "nombre": "Solicitud de Traslado de establecimiento comercial",
+        "institucion": "I. Municipalidad de Viña del Mar (Departamento de Patentes y Publicidad)",
+        "costo": "No publicado en la página oficial.",
+        "vigencia": "Trámite único; modifica la patente vigente.",
+        "requisitos": [
+          "Nuevo domicilio dentro de Viña del Mar que cumpla las normas de zonificación",
+          "Antecedentes indicados en el formulario oficial (el detalle no está publicado en la página del municipio)"
+        ],
+        "enlace_oficial": "https://www.munivina.cl/wp-content/uploads/2025/09/7.-Solicitud-de-traslado_2025.pdf"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 23,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Comercio Minorista (local)",
+        "nombre": "Solicitud de Cambio de Nombre de patente",
+        "institucion": "I. Municipalidad de Viña del Mar (Departamento de Patentes y Publicidad)",
+        "costo": "No publicado en la página oficial.",
+        "vigencia": "Trámite único.",
+        "requisitos": [
+          "Aplica a compra-venta, posesión efectiva u otro medio que demuestre la transferencia",
+          "Antecedentes indicados en el formulario oficial (el detalle no está publicado en la página del municipio)"
+        ],
+        "enlace_oficial": "https://www.munivina.cl/wp-content/uploads/2025/09/6-solicitud-de-cambio-de-nombre_2025.pdf"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 24,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Comercio Minorista (local)",
+        "nombre": "Solicitud de Término de Negocio",
+        "institucion": "I. Municipalidad de Viña del Mar (Departamento de Patentes y Publicidad)",
+        "costo": "No publicado en la página oficial.",
+        "vigencia": "Trámite único; el cobro es anual, por lo que debe presentarse antes de julio de cada año.",
+        "requisitos": [
+          "Aviso de cese de la actividad en un local con patente municipal",
+          "Antecedentes indicados en el formulario oficial (el detalle no está publicado en la página del municipio)"
+        ],
+        "enlace_oficial": "https://www.munivina.cl/wp-content/uploads/2025/09/10-solicitud-de-termino-de-negocio-2025.pdf"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 25,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Comercio Minorista (local)",
+        "nombre": "Declaración de Publicidad (letreros luminosos y no luminosos)",
+        "institucion": "I. Municipalidad de Viña del Mar (Departamento de Patentes y Publicidad)",
+        "costo": "Cobro según dimensiones del letrero (derechos de publicidad).",
+        "vigencia": "Se declara y cobra junto con la patente.",
+        "requisitos": [
+          "Declarar las dimensiones del letrero instalado, luminoso o no luminoso",
+          "Antecedentes indicados en el formulario oficial (el detalle no está publicado en la página del municipio)"
+        ],
+        "enlace_oficial": "https://www.munivina.cl/wp-content/uploads/2025/09/12-solicitud-declaracion-propaganda_2025.pdf"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 26,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Comercio Minorista (local)",
+        "nombre": "Solicitud de Arrendamiento de Patentes",
+        "institucion": "I. Municipalidad de Viña del Mar (Departamento de Patentes y Publicidad)",
+        "costo": "No publicado en la página oficial.",
+        "vigencia": "Transferencia temporal de la explotación del negocio.",
+        "requisitos": [
+          "Titular de patente comercial o de alcohol que cede la explotación a otro contribuyente",
+          "Antecedentes indicados en el formulario oficial (el detalle no está publicado en la página del municipio)"
+        ],
+        "enlace_oficial": "https://www.munivina.cl/wp-content/uploads/2025/09/14-solicitud-de-arrendamiento-patente_2025.pdf"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 27,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Comercio Minorista (local)",
+        "nombre": "Ventas especiales, ferias expositoras y desfiles de moda en bienes particulares con patente o recintos municipales",
+        "institucion": "I. Municipalidad de Viña del Mar (Departamento de Permisos, Arlegui 777)",
+        "costo": "No publicado en la página oficial.",
+        "vigencia": "Por evento; máximo 15 días por mes calendario. No se otorgan permisos sucesivos al mismo representante.",
+        "requisitos": [
+          "Solicitud al Departamento de Permisos (consultas: permisos.promociones@munivina.cl)",
+          "Debe realizarse en bienes particulares con patente comercial o en recintos municipales específicos"
+        ],
+        "enlace_oficial": "https://www.munivina.cl/departamento-de-permisos/"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 28,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Servicios Profesionales",
+        "nombre": "Solicitud de Patente Microempresa Familiar",
+        "institucion": "I. Municipalidad de Viña del Mar (Departamento de Patentes y Publicidad)",
+        "costo": "No publicado en la página oficial.",
+        "vigencia": "Permanente, con pago de patente.",
+        "requisitos": [
+          "Persona natural o EIRL con actividad económica dentro de la casa-habitación en Viña del Mar",
+          "Antecedentes indicados en el formulario oficial (el detalle no está publicado en la página del municipio)"
+        ],
+        "enlace_oficial": "https://www.munivina.cl/wp-content/uploads/2025/09/5-solicitud-de-patente-microempresa_2025.pdf"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 29,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Gastronomía y Alimentos",
+        "nombre": "Solicitud de Regularización de Patentes de Alcoholes",
+        "institucion": "I. Municipalidad de Viña del Mar (Departamento de Patentes y Publicidad)",
+        "costo": "No publicado en la página oficial.",
+        "vigencia": "Trámite único posterior a la adjudicación.",
+        "requisitos": [
+          "Aplica tras adjudicar una patente de alcohol limitada en remate municipal (bar, cervecería, minimercado de bebidas alcohólicas)",
+          "Antecedentes indicados en el formulario oficial (el detalle no está publicado en la página del municipio)"
+        ],
+        "enlace_oficial": "https://www.munivina.cl/wp-content/uploads/2025/09/9-solicitud-de-regularizacion-alcohol_2025.pdf"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 30,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Comercio en Vía Pública",
+        "nombre": "Solicitud de Ampliación de Giro de permiso municipal",
+        "institucion": "I. Municipalidad de Viña del Mar (Departamento de Permisos, Arlegui 777)",
+        "costo": "No publicado en la página oficial.",
+        "vigencia": "Trámite único.",
+        "requisitos": [
+          "Formulario de solicitud",
+          "Copia del último permiso cancelado",
+          "Si se amplía a hortalizas: declaración de procedencia de mercaderías",
+          "Resolución sanitaria para comestibles y/o bebestibles"
+        ],
+        "enlace_oficial": "https://www.munivina.cl/wp-content/uploads/2023/10/Ampliacion-de-Giro-Procesamiento-18.10.23.pdf"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 31,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Comercio en Vía Pública",
+        "nombre": "Solicitud de Cambio de Giro de permiso municipal",
+        "institucion": "I. Municipalidad de Viña del Mar (Departamento de Permisos, Arlegui 777)",
+        "costo": "No publicado en la página oficial.",
+        "vigencia": "Trámite único.",
+        "requisitos": [
+          "Formulario de solicitud",
+          "Copia del último permiso cancelado",
+          "Si el cambio es a hortalizas: declaración de procedencia de mercaderías",
+          "Resolución sanitaria para comestibles y/o bebestibles"
+        ],
+        "enlace_oficial": "https://www.munivina.cl/wp-content/uploads/2023/10/Cambio-de-Giro-Procesamiento-18.10.23.pdf"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 32,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Comercio en Vía Pública",
+        "nombre": "Solicitud de Término de Permiso",
+        "institucion": "I. Municipalidad de Viña del Mar (Departamento de Permisos, Arlegui 777)",
+        "costo": "No publicado en la página oficial.",
+        "vigencia": "Trámite único; se recomienda ingresarlo la última semana del mes.",
+        "requisitos": [
+          "Formulario de solicitud",
+          "Último permiso cancelado"
+        ],
+        "enlace_oficial": "https://www.munivina.cl/wp-content/uploads/2023/04/Termino-Permiso-Procesamiento-06.02.23.pdf"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 33,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Comercio en Vía Pública",
+        "nombre": "Promociones Publicitarias en vía pública o recintos deportivos municipales",
+        "institucion": "I. Municipalidad de Viña del Mar (Departamento de Permisos, Arlegui 777)",
+        "costo": "Cobro por punto de promoción (máximo 4 promotores) y por producto o marca; tarifa en la ordenanza municipal.",
+        "vigencia": "Según el permiso otorgado.",
+        "requisitos": [
+          "Ingresar la solicitud de promoción por el sitio web municipal (Pagos en línea)",
+          "Actividad con promotores en vía pública o recintos deportivos municipales",
+          "Consultas: permisos.promociones@munivina.cl"
+        ],
+        "enlace_oficial": "https://www.munivina.cl/departamento-de-permisos/"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 34,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Gastronomía y Alimentos",
+        "nombre": "Autorización sanitaria de alimentos",
+        "institucion": "Autoridad Sanitaria – SEREMI de Salud Región de Valparaíso",
+        "costo": "Arancel base según tipo de instalación, desde $12.100 hasta $899.700 CLP, más 0,5% del capital inicial declarado ante el SII.",
+        "vigencia": "3 años, renovable.",
+        "requisitos": [
+          "Autorización municipal, según el plano regulador",
+          "Plano o croquis de planta e instalaciones sanitarias a escala",
+          "Descripción general de los procesos de elaboración",
+          "Listado de materias primas que se emplearán",
+          "Listado de tipos de alimentos que se elaborarán",
+          "Comprobante de pago de alcantarillado público o resolución de la obra de alcantarillado particular",
+          "Comprobante de pago de agua potable de la red pública o resolución de la obra de agua potable particular",
+          "Croquis o memoria técnica de los sistemas de eliminación de calor, olor o vapor y de frío, según corresponda",
+          "Sistema de control de calidad sanitaria (manual de buenas prácticas)",
+          "Sistema de eliminación de desechos (basuras)",
+          "Si es centro comercial: contrato de arriendo o autorización de propiedad legalizada, y carta de uso exclusivo de servicios higiénicos (a no más de 75 m) legalizada",
+          "Si es instalación en vía pública (carro, módulo, caseta, kiosco, puesto de feria): certificado de emplazamiento municipal, cuando corresponda"
+        ],
+        "enlace_oficial": "https://www.chileatiende.gob.cl/fichas/172-autorizacion-sanitaria-de-alimentos"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 35,
+      "fields": {
+        "comuna": "Valparaíso",
+        "rubro": "Gastronomía y Alimentos",
+        "nombre": "Certificado de libre venta para productos alimenticios y materias primas",
+        "institucion": "Autoridad Sanitaria – SEREMI de Salud Región de Valparaíso",
+        "costo": "Arancel de $14.300 CLP; exención o pago mínimo para el 40% más vulnerable del Registro Social de Hogares.",
+        "vigencia": "Indefinida, mientras se conserven las características de elaboración y siga vigente la resolución sanitaria.",
+        "requisitos": [
+          "Resolución sanitaria que autoriza la instalación de alimentos (elabora, distribuye o almacena)",
+          "ClaveÚnica si se hace en línea",
+          "Datos del exportador, instalación elaboradora, país de destino y lista de productos"
+        ],
+        "enlace_oficial": "https://www.chileatiende.gob.cl/fichas/175-certificado-de-libre-venta-para-productos-alimenticios-y-materias-primas"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 36,
+      "fields": {
+        "comuna": "Valparaíso",
+        "rubro": "Gastronomía y Alimentos",
+        "nombre": "Autorización sanitaria para vehículos de transporte de alimentos",
+        "institucion": "Autoridad Sanitaria – SEREMI de Salud Región de Valparaíso",
+        "costo": "Arancel según simulación en el sitio de la SEREMI (Aranceles Vehículo de transporte de alimentos).",
+        "vigencia": "3 años desde el otorgamiento; se renueva automáticamente salvo aviso del propietario.",
+        "requisitos": [
+          "Cédula de identidad",
+          "Padrón del vehículo"
+        ],
+        "enlace_oficial": "https://www.chileatiende.gob.cl/fichas/16583/1/pdf"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 37,
+      "fields": {
+        "comuna": "Valparaíso",
+        "rubro": "Gastronomía y Alimentos",
+        "nombre": "Comunicación de inicio de actividades SAG de la Ley de Alcoholes",
+        "institucion": "Servicio Agrícola y Ganadero (SAG)",
+        "costo": "0,14 UTM + IVA.",
+        "vigencia": "No indicada en la ficha oficial.",
+        "requisitos": [
+          "Cédula de identidad del representante legal",
+          "Inicio de actividades ante el SII (o antecedentes que acrediten que no está obligado)",
+          "Solicitar la inscripción dentro de 30 días desde la declaración de inicio de actividades ante el SII",
+          "Es requisito para obtener la patente de alcoholes de restaurantes y botillerías"
+        ],
+        "enlace_oficial": "https://www.chileatiende.gob.cl/fichas/2560-comunicacion-de-inicio-de-actividades-sag-de-la-ley-de-alcoholes"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 38,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Gastronomía y Alimentos",
+        "nombre": "Certificado de libre venta para productos alimenticios y materias primas",
+        "institucion": "Autoridad Sanitaria – SEREMI de Salud Región de Valparaíso",
+        "costo": "Arancel de $14.300 CLP; exención o pago mínimo para el 40% más vulnerable del Registro Social de Hogares.",
+        "vigencia": "Indefinida, mientras se conserven las características de elaboración y siga vigente la resolución sanitaria.",
+        "requisitos": [
+          "Resolución sanitaria que autoriza la instalación de alimentos (elabora, distribuye o almacena)",
+          "ClaveÚnica si se hace en línea",
+          "Datos del exportador, instalación elaboradora, país de destino y lista de productos"
+        ],
+        "enlace_oficial": "https://www.chileatiende.gob.cl/fichas/175-certificado-de-libre-venta-para-productos-alimenticios-y-materias-primas"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 39,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Gastronomía y Alimentos",
+        "nombre": "Autorización sanitaria para vehículos de transporte de alimentos",
+        "institucion": "Autoridad Sanitaria – SEREMI de Salud Región de Valparaíso",
+        "costo": "Arancel según simulación en el sitio de la SEREMI (Aranceles Vehículo de transporte de alimentos).",
+        "vigencia": "3 años desde el otorgamiento; se renueva automáticamente salvo aviso del propietario.",
+        "requisitos": [
+          "Cédula de identidad",
+          "Padrón del vehículo"
+        ],
+        "enlace_oficial": "https://www.chileatiende.gob.cl/fichas/16583/1/pdf"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 40,
+      "fields": {
+        "comuna": "Viña del Mar",
+        "rubro": "Gastronomía y Alimentos",
+        "nombre": "Comunicación de inicio de actividades SAG de la Ley de Alcoholes",
+        "institucion": "Servicio Agrícola y Ganadero (SAG)",
+        "costo": "0,14 UTM + IVA.",
+        "vigencia": "No indicada en la ficha oficial.",
+        "requisitos": [
+          "Cédula de identidad del representante legal",
+          "Inicio de actividades ante el SII (o antecedentes que acrediten que no está obligado)",
+          "Solicitar la inscripción dentro de 30 días desde la declaración de inicio de actividades ante el SII",
+          "Es requisito para obtener la patente de alcoholes de restaurantes y botillerías"
+        ],
+        "enlace_oficial": "https://www.chileatiende.gob.cl/fichas/2560-comunicacion-de-inicio-de-actividades-sag-de-la-ley-de-alcoholes"
+      }
+    },
+    {
+      "model": "comercio.permisomunicipal",
+      "pk": 41,
+      "fields": {
+        "comuna": "Valparaíso",
+        "rubro": "Comercio en Vía Pública",
+        "nombre": "Autorización sanitaria para vendedores ambulantes de alimentos",
+        "institucion": "Autoridad Sanitaria – SEREMI de Salud Región de Valparaíso",
+        "costo": "Arancel base de $15.600 CLP, reajustable por IPC cada enero.",
+        "vigencia": "No indicada en la ficha oficial; confirmar en la resolución de la SEREMI.",
+        "requisitos": [
+          "Trámite en línea en SEREMI en Línea con ClaveÚnica, o en las oficinas regionales",
+          "No requiere dirección de emplazamiento otorgada por la municipalidad",
+          "Autorización válida para una comuna específica",
+          "Solo alimentos de bajo riesgo: frutas y hortalizas frescas, frutos secos, algodón de azúcar envasado, alimentos envasados que no requieren refrigeración, bebidas analcohólicas envasadas, helados envasados de fábricas autorizadas, infusiones en termos sellados, masas dulces y palomitas envasadas, frutas confitadas",
+          "No reemplaza el permiso municipal de vía pública (ver permiso de Viña del Mar)"
+        ],
+        "enlace_oficial": "https://www.chileatiende.gob.cl/fichas/16578-autorizacion-sanitaria-para-vendedores-ambulantes-de-alimentos"
+      }
+    }
+  ]
