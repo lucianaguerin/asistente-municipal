@@ -35,7 +35,7 @@ Si PowerShell bloquea el script, ejecuta una vez: `Set-ExecutionPolicy -Scope Cu
 
 **3. Instalar dependencias**
 ```bash
-pip install -r requirements.txt
+pip install django requests
 ```
 
 **4. Iniciar el servidor**
