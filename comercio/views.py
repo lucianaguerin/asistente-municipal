@@ -1,33 +1,6 @@
 import requests
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import PermisoMunicipal, IndicadorEconomico
-
-def resultado_permisos(request):
-    comuna = request.GET.get('comuna', '')
-    actividad = request.GET.get('actividad', '')
-    espacio = request.GET.get('espacio', '')
-
-    # Partimos consultando todos los registros de los 41 permisos
-    resultados = PermisoMunicipal.objects.all()
-
-    # Filtramos por comuna si se seleccionó
-    if comuna:
-        resultados = resultados.filter(comuna__icontains=comuna)
-
-    # Filtramos según la actividad elegida en el cuestionario
-    if actividad == 'Gastronomía y Alimentos':
-        resultados = resultados.filter(rubro__icontains='Gastronomía')
-    elif actividad == 'Servicios Profesionales':
-        resultados = resultados.filter(rubro__icontains='Servicios Profesionales')
-    elif actividad == 'Comercio':
-        if espacio == 'local':
-            resultados = resultados.filter(rubro__icontains='Comercio Minorista')
-        elif espacio == 'calle':
-            resultados = resultados.filter(rubro__icontains='Comercio en Vía Pública')
-        else:
-            resultados = resultados.filter(rubro__icontains='Comercio')
-
-    return render(request, 'comercio/resultado.html', {'resultados': resultados})
 
 def index(request):
     return render(request, 'comercio/index.html')
@@ -35,31 +8,28 @@ def index(request):
 def resultado_permisos(request):
 
     comuna = request.GET.get('comuna')
-    actividad = request.GET.get('actividad') # Ej: 'alimentos', 'servicios', 'productos'
-    espacio = request.GET.get('espacio')     # Ej: 'local', 'calle'
-    
+    actividad = request.GET.get('actividad')
+    espacio = request.GET.get('espacio')
 
+    # Sin comuna no hay consulta posible: volvemos al cuestionario
+    if not comuna:
+        return redirect('index')
+
+    # Traduce las respuestas del cuestionario al rubro guardado en la base de datos
     rubro = None
-    if actividad == 'alimentos':
+    if actividad in ('Gastronomía y Alimentos', 'alimentos'):
         rubro = 'Gastronomía y Alimentos'
-    elif actividad == 'servicios':
+    elif actividad in ('Servicios Profesionales', 'servicios'):
         rubro = 'Servicios Profesionales'
-    elif actividad == 'productos' and espacio == 'calle':
-        rubro = 'Comercio en Vía Pública'
-    elif actividad == 'productos' and espacio == 'local':
-        rubro = 'Comercio Minorista'
-    permisos = PermisoMunicipal.objects.filter(
-    comuna__icontains=comuna,
-    rubro__icontains=rubro
-    ) if rubro else PermisoMunicipal.objects.filter(comuna__icontains=comuna)
+    elif actividad in ('Comercio', 'productos'):
+        if espacio == 'calle':
+            rubro = 'Comercio en Vía Pública'
+        elif espacio == 'local':
+            rubro = 'Comercio Minorista (local)'
 
- 
-    resultados = None
-    if comuna and rubro:
-        resultados = PermisoMunicipal.objects.filter(comuna=comuna, rubro=rubro)
-    elif comuna: 
-        resultados = PermisoMunicipal.objects.filter(comuna=comuna)
-
+    resultados = PermisoMunicipal.objects.filter(comuna=comuna)
+    if rubro:
+        resultados = resultados.filter(rubro=rubro)
 
    # 4. CONEXIÓN A API DEFINITIVA (VALOR-UTM.CL) CON FALLBACK OFFLINE
     valor_utm = None
