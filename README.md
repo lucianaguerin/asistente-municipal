@@ -48,12 +48,6 @@ Abre http://127.0.0.1:8000/ en el navegador. Para detener el servidor: `Ctrl + C
 
 La base de datos (`db.sqlite3`) ya incluye los 41 permisos, así que no hace falta migrar ni cargar datos. Necesitas conexión a internet para el diseño (Bootstrap) y el valor de la UTM; sin internet la app sigue funcionando con el último valor guardado.
 
-## Panel de administración (opcional)
-```bash
-python manage.py createsuperuser
-```
-Luego entra a http://127.0.0.1:8000/admin/ para crear o editar permisos.
-
 ## Solución de problemas
 - `command not found: python` → usa `python3`.
 - `No module named django` → el entorno virtual no está activado o falta el paso 3.
